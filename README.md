@@ -6,10 +6,10 @@ A scatterplot of the first 10 averages:
 
 ![10 averages](10.png)
 
-A scatterplot of the first 10 averages:
+A scatterplot of the first 100 averages:
 
 ![100 averages](100.png)
 
-A scatterplot of the first 10 averages:
+A scatterplot of the first 999 averages:
 
 ![999 averages](999.png)
