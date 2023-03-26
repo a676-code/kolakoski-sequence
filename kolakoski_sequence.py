@@ -1,5 +1,5 @@
 # kolakoski_sequence.py
-# Andrew Lounsbury, with some code adapted from https://github.com/w4jbm/Kolakoski-Sequence.git
+# Andrew Lounsbury, with some code adapted from kolakoski.py at https://github.com/w4jbm/Kolakoski-Sequence.git
 # 23/3/23
 # Purpose: demonstrate that the average of the kolakoski sequence tends to 3/2 as n -> infinity
 
@@ -34,12 +34,7 @@ for i, s in enumerate(sequence):
     average_sequence.append(average)
 
 df1 = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(n):
-    indices.append(i)
-
-df1["index"] = indices
+df['index'] = [i for i in range(n)]
 sns.scatterplot(x="index", y="Average", data=df1)
 plt.show()
     
@@ -54,12 +49,7 @@ for i, s in enumerate(sequence):
     average_sequence.append(average)
 
 df1 = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(n):
-    indices.append(i)
-
-df1["index"] = indices
+df['index'] = [i for i in range(n)]
 sns.scatterplot(x="index", y="Average", data=df1)
 plt.show()
 
@@ -74,11 +64,6 @@ for i, s in enumerate(sequence):
     average_sequence.append(average)
 
 df1 = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(n):
-    indices.append(i)
-
-df1["index"] = indices
+df['index'] = [i for i in range(n)]
 sns.scatterplot(x="index", y="Average", data=df1)
 plt.show()
