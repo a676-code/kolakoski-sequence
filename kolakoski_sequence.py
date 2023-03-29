@@ -33,9 +33,10 @@ for i, s in enumerate(sequence):
     average = sum / (i + 1)
     average_sequence.append(average)
 
-df1 = pd.DataFrame(average_sequence, columns=["Average"])
+df = pd.DataFrame(average_sequence, columns=["Average"])
 df['index'] = [i for i in range(n)]
-sns.scatterplot(x="index", y="Average", data=df1)
+sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/10.png")
 plt.show()
     
 # scatterplot of 100 numbers
@@ -48,13 +49,14 @@ for i, s in enumerate(sequence):
     average = sum / (i + 1)
     average_sequence.append(average)
 
-df1 = pd.DataFrame(average_sequence, columns=["Average"])
+df = pd.DataFrame(average_sequence, columns=["Average"])
 df['index'] = [i for i in range(n)]
-sns.scatterplot(x="index", y="Average", data=df1)
+sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/100.png")
 plt.show()
 
-# scatterplot of 999 numbers (1000 gives an inconspicuous error)
-n = 999
+# scatterplot of 1000 numbers
+n = 1000
 sequence = generate_kolakoski(n)
 average_sequence = []
 sum = 0
@@ -63,7 +65,8 @@ for i, s in enumerate(sequence):
     average = sum / (i + 1)
     average_sequence.append(average)
 
-df1 = pd.DataFrame(average_sequence, columns=["Average"])
-df['index'] = [i for i in range(n)]
-sns.scatterplot(x="index", y="Average", data=df1)
+df = pd.DataFrame(average_sequence, columns=["Average"])
+df['index'] = [i for i in range(len(average_sequence))]
+sns.scatterplot(x="index", y="Average", data=df)
+plt.savefig("images/1000.png")
 plt.show()
