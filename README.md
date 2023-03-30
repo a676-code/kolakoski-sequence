@@ -3,13 +3,10 @@ This script, which was partially adapted from the script `kolakoski.py` from [th
 
 # Seaborn plots
 A scatterplot of the first 10 averages:
-
 ![10 averages](images/10.png)
 
 A scatterplot of the first 100 averages:
-
 ![100 averages](images/100.png)
 
-A scatterplot of the first 999 averages:
-
-![999 averages](images/1000.png)
+A scatterplot of the first 1000 averages:
+![1000 averages](images/1000.png)
